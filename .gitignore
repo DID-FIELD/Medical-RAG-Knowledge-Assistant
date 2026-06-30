@@ -1,0 +1,49 @@
+# ============== Python 编译缓存 ==============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# ============== 虚拟环境（本地环境不上传） ==============
+rag_env/
+venv/
+env/
+ENV/
+
+# ============== IDE 与编辑器配置 ==============
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ============== 环境变量与私密配置 ==============
+.env
+.env.local
+*.env
+.streamlit/secrets.toml
+
+# ============== 可重建数据（体积大，均可通过脚本重新生成） ==============
+vectorstore/
+*.chroma
+*.sqlite3
+
+# ============== 临时文件与日志 ==============
+*.log
+tmp/
+temp/
+*.tmp
+
+# ============== 系统垃圾文件 ==============
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ============== 私有医疗文档（默认不上传，如需示例可注释） ==============
+data/medical_docs/*.pdf
+data/medical_docs/*.docx
+data/medical_docs/*.txt
